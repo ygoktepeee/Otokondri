@@ -23,7 +23,6 @@ namespace Otokondri
         private void AracDetayDuzenle_geri_Click(object sender, EventArgs e)
         {
             PersonelPanel PersonelPanel = new PersonelPanel();
-            //PersonelPanel.Show();
             this.Hide();
         }
 
@@ -36,7 +35,6 @@ namespace Otokondri
             adapter.Fill(dtable);
             dataGridView1.DataSource = dtable;
             con.Close();
-            //dataGridView1.Rows[0].Visible = false;
         }
 
         private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
